@@ -23,3 +23,5 @@ end
 gem 'jquery-rails'
 
 gem 'subscribem', path: '../subscribem'
+gem 'forem', github: 'radar/forem'
+gem 'kaminari', '0.14.1'
