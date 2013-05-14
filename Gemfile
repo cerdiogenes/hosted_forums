@@ -25,3 +25,8 @@ gem 'jquery-rails'
 gem 'subscribem', path: '../subscribem'
 gem 'forem', github: 'radar/forem'
 gem 'kaminari', '0.14.1'
+
+group :development, :test do
+  gem 'rspec-rails', '2.12.2'
+  gem 'capybara', '2.0.2'
+end
