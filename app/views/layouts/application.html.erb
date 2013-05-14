@@ -8,6 +8,12 @@
 </head>
 <body>
 
+<% flash.each do |k,v| %>
+	<div class='flash <%= k %>'><%= v %></div>
+<% end %>
+
+<%= render :partial => "subscribem/login" %>
+
 <%= yield %>
 
 </body>
