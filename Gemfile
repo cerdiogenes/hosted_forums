@@ -29,4 +29,5 @@ gem 'kaminari', '0.14.1'
 group :development, :test do
   gem 'rspec-rails', '2.12.2'
   gem 'capybara', '2.0.2'
+  gem 'factory_girl', '4.1.0'
 end
