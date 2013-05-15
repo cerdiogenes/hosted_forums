@@ -18,11 +18,9 @@ feature "Forum scoping" do
 
   scenario "is only the forum admin for one account" do
     sign_in_as(:user => account_a.owner, :account => account_a)
-    Capybara.default_host = "http://#{account_a.subdomain}.example.com"
-    visit '/'
+    visit "http://#{account_a.subdomain}.example.com/"
     page.should have_content("Admin Area")
-    Capybara.default_host = "http://#{account_b.subdomain}.example.com"
-    visit '/'
+    visit "http://#{account_b.subdomain}.example.com/"
     page.should_not have_content("Admin Area")
   end
 end
